@@ -11,6 +11,7 @@ export const AddCategory = ({ setCategorias }) => {
   const onHandleSubmit = (e) =>{
     // Evita que se recargue la pagina
       e.preventDefault();
+      // console.log('onHandleSubmit ',inputValue);
       if(inputValue.trim().length > 2){
         setCategorias(cats => [inputValue,...cats]);
         setInputValue('');
